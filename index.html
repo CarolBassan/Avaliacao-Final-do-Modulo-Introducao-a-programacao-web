@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./images/Devil-PNG-Image-18263.png" type="image/x-icon">
+    <title>Sistema de Recados</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container cadastro-container">
+            <form id="formulario-cadastro">
+                <h1>Crie uma conta</h1>
+                <span>Use seu e-mail para se registrar</span>
+                <input type="text" placeholder="Nome" id="input-cadastro-nome" />
+                <input type="email" placeholder="E-mail" id="input-cadastro-email" />
+                <input type="password" placeholder="Senha" id="input-cadastro-senha" />
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-container login-container">
+            <form id="formulario-login">
+                <h1>Entrar no Sistema de Recados</h1>
+                <input type="email" placeholder="E-mail" id="input-login-email" required />
+                <input type="password" placeholder="Senha" id="input-login-senha" required />
+                <a href="#">Esqueceu sua senha?</a>
+                <button type="submit">ENTRAR</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <button class="btn-animacao" id="signIn">Acessar minha conta</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Olá !</h1>
+                    <p>Introduza os seus dados pessoais </p>
+                    <button class="btn-animacao" id="signUp">CADASTRE-SE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
